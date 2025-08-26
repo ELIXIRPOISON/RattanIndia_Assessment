@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Rev — Revolt Voice (Clone)</title>
+    <style>
+      body { font-family: ui-sans-serif, system-ui; margin: 24px; }
+      .row { display:flex; gap:12px; align-items:center; }
+      #status { opacity:.6 }
+      #log { margin-top:12px; height:140px; overflow:auto; background:#1112; padding:8px; border-radius:8px; }
+      button { padding:10px 16px; border-radius:10px; border:1px solid #9994; }
+    </style>
+  </head>
+  <body>
+    <h2>Rev — Revolt Voice (Clone)</h2>
+    <div class="row">
+      <button id="start">Start</button>
+      <button id="stop" disabled>Stop</button>
+      <button id="interrupt" disabled>Interrupt</button>
+      <span id="status">idle</span>
+    </div>
+    <audio id="player" autoplay></audio>
+    <div id="log"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
